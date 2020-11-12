@@ -1,7 +1,22 @@
 from config import DefaultConfig
+from torch.utils.data import Dataset
+from utils import Convertor
 import numpy as np
 import json
 import os
+
+class ClueDataset(Dataset):
+	
+	def __init__(self,file_path,convertor):
+		self.dataset = np.load(file_path,allow_pickle=True)
+		self.mycvt = convertor
+		
+	def __len__(self):
+		return len(self.dataset)
+		
+	def __getitem__(self,idx):
+		return
+		
 
 def process_data():
 	'''

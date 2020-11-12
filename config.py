@@ -5,4 +5,5 @@ class DefaultConfig(object):
     
     data_dir = './data/'
     vocab_path = './data/vocab.npy'
+    label_path = './data/label_voc.npy'
     

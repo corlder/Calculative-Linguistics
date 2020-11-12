@@ -3,7 +3,7 @@ import numpy as np
 import json
 import os
 
-def prepare_for_data():
+def process_data():
 	'''
 	'''
 	files = ["train","test"]
@@ -68,9 +68,9 @@ def create_vocab():
 						word_freq[ch] = 1	
 	i = 0
 	vocab = {}
-	sorted(word_freq.items(),key=lambda e:e[1],reverse=True)
-	for word,cnt in word_freq.items():
-		vocab[word] = i
+	tmp = sorted(word_freq.items(),key=lambda e:e[1],reverse=True)
+	for elem in tmp:
+		vocab[elem[0]] = i
 		i += 1
 		if i>=max_size:
 			break

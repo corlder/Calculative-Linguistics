@@ -19,6 +19,13 @@ class Convertor(object):
 		
 	def id2label(self,id):
 		return self.rev_label_voc[id]
+		
+	def get_vocab_size(self):
+		return len(self.vocab)
+	
+	def get_tagset_size(self):
+		return len(self.label_voc)
+	
 
 if __name__ == "__main__":
 	test = Convertor('./data/vocab.npy','./data/label_voc.npy')

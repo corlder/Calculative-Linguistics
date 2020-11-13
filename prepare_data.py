@@ -5,17 +5,56 @@ import numpy as np
 import json
 import os
 
+from config import DefaultConfig
+from torch.utils.data import Dataset,DataLoader
+from utils import Convertor
+import torch
+import numpy as np
+import json
+import os
+
 class ClueDataset(Dataset):
-	
-	def __init__(self,file_path,convertor):
-		self.dataset = np.load(file_path,allow_pickle=True)
-		self.mycvt = convertor
-		
-	def __len__(self):
-		return len(self.dataset)
-		
-	def __getitem__(self,idx):
-		return
+
+    def __init__(self,file_path,convertor):
+        self.mycvt = convertor
+        self.dataset = self.convert2id(np.load(file_path,allow_pickle=True))
+        
+    def convert2id(self,raw_list):
+        
+        prd_list = []
+        for x in raw_list:
+            text_ids = [self.mycvt.word2id(i) for i in x[0]]
+            tag_ids = [self.mycvt.label2id(i) for i in x[1]]
+            prd_list.append([text_ids,tag_ids])
+        return prd_list
+
+    def __len__(self):
+        return len(self.dataset)
+    
+    def get_long_tensor(self,tokens_list,batch_size):
+        
+        token_len = max([len(x) for x in tokens_list])
+        tokens = torch.LongTensor(batch_size,token_len).fill_(0)
+        for i,s in enumerate(tokens_list):
+            tokens[i, :len(s)] = torch.LongTensor(s)
+        return tokens
+    
+    def collate_fn(self,batch):
+        
+        texts = [x[0] for x in batch]
+        labels = [x[1] for x in batch]
+        lens = [len(x) for x in texts]
+        batch_size = len(batch)
+
+        input_ids = self.get_long_tensor(texts,batch_size)
+        label_ids = self.get_long_tensor(labels,batch_size)
+        
+        return [input_ids,label_ids,lens]
+
+    def __getitem__(self,idx):
+        text = self.dataset[idx][0]
+        label = self.dataset[idx][1]
+        return [text,label]
 		
 
 def process_data():

@@ -8,14 +8,18 @@ class Convertor(object):
 		self.rev_vocab = dict(zip(self.vocab.values(),self.vocab.keys()))
 		self.rev_label_voc = dict(zip(self.label_voc.values(),self.label_voc.keys()))
 	
-	def word2id(word):
+	def word2id(self,word):
 		return self.vocab[word]
 		
-	def id2word(id):
+	def id2word(self,id):
 		return self.rev_vocab[id]
 	
-	def label2id(label):
+	def label2id(self,label):
 		return self.label_voc[label]
 		
-	def id2label(id):
+	def id2label(self,id):
 		return self.rev_label_voc[id]
+
+if __name__ == "__main__":
+	test = Convertor('./data/vocab.npy','./data/label_voc.npy')
+	print(test.id2word(1))

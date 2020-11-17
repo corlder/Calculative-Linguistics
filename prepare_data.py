@@ -120,8 +120,9 @@ def create_vocab():
 						word_freq[ch] += 1
 					else:
 						word_freq[ch] = 1	
-	i = 0
+	i = 1
 	vocab = {}
+	vocab['PADDING'] = 0
 	tmp = sorted(word_freq.items(),key=lambda e:e[1],reverse=True)
 	for elem in tmp:
 		vocab[elem[0]] = i

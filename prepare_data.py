@@ -15,46 +15,59 @@ import os
 
 class ClueDataset(Dataset):
 
-    def __init__(self,file_path,convertor):
-        self.mycvt = convertor
-        self.dataset = self.convert2id(np.load(file_path,allow_pickle=True))
-        
-    def convert2id(self,raw_list):
-        
-        prd_list = []
-        for x in raw_list:
-            text_ids = [self.mycvt.word2id(i) for i in x[0]]
-            tag_ids = [self.mycvt.label2id(i) for i in x[1]]
-            prd_list.append([text_ids,tag_ids])
-        return prd_list
+	def __init__(self,file_path,convertor):
+		self.mycvt = convertor
+		self.dataset = self.convert2id(np.load(file_path,allow_pickle=True))
+		
+	def convert2id(self,raw_list):
+		
+		prd_list = []
+		for x in raw_list:
+			text_ids = [self.mycvt.word2id(i) for i in x[0]]
+			tag_ids = [self.mycvt.label2id(i) for i in x[1]]
+			prd_list.append([text_ids,tag_ids])
+		return prd_list
 
-    def __len__(self):
-        return len(self.dataset)
-    
-    def get_long_tensor(self,tokens_list,batch_size):
-        
-        token_len = max([len(x) for x in tokens_list])
-        tokens = torch.LongTensor(batch_size,token_len).fill_(0)
-        for i,s in enumerate(tokens_list):
-            tokens[i, :len(s)] = torch.LongTensor(s)
-        return tokens
-    
-    def collate_fn(self,batch):
-        
-        texts = [x[0] for x in batch]
-        labels = [x[1] for x in batch]
-        lens = [len(x) for x in texts]
-        batch_size = len(batch)
+	def __len__(self):
+		return len(self.dataset)
+	
+	# def get_long_tensor(self,tokens_list,batch_size):
+		
+		# token_len = max([len(x) for x in tokens_list])
+		# tokens = torch.LongTensor(batch_size,token_len).fill_(0)
+		# for i,s in enumerate(tokens_list):
+			# tokens[i, :len(s)] = torch.LongTensor(s)
+		# return tokens
+		
+	def get_long_tensor(self,texts,labels,batch_size):
+		
+		token_len = max([len(x) for x in texts])
+		text_tokens = torch.LongTensor(batch_size,token_len).fill_(0)
+		label_tokens = torch.LongTensor(batch_size,token_len).fill_(0)
+		mask_tokens = torch.ByteTensor(batch_size,token_len).fill_(0)
+		
+		for i,s in enumerate(zip(texts,labels)):
+			text_tokens[i, :len(s[0])] = torch.LongTensor(s[0])
+			label_tokens[i, :len(s[1])] = torch.LongTensor(s[1])
+			mask_tokens[i, :len(s[0])] = torch.tensor([1] * len(s[0]),dtype=torch.uint8)
+			
+		return text_tokens,label_tokens,mask_tokens
+	
+	def collate_fn(self,batch):
+		
+		texts = [x[0] for x in batch]
+		labels = [x[1] for x in batch]
+		lens = [len(x) for x in texts]
+		batch_size = len(batch)
 
-        input_ids = self.get_long_tensor(texts,batch_size)
-        label_ids = self.get_long_tensor(labels,batch_size)
-        
-        return [input_ids,label_ids,lens]
+		input_ids,label_ids,input_mask = self.get_long_tensor(texts,labels,batch_size)
+		
+		return [input_ids,label_ids,input_mask,lens]
 
-    def __getitem__(self,idx):
-        text = self.dataset[idx][0]
-        label = self.dataset[idx][1]
-        return [text,label]
+	def __getitem__(self,idx):
+		text = self.dataset[idx][0]
+		label = self.dataset[idx][1]
+		return [text,label]
 		
 
 def process_data():

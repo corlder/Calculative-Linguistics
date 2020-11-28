@@ -3,6 +3,18 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torchcrf import CRF
 
+class SpatialDropout(nn.Dropout2d):
+    def __init__(self, p=0.6):
+        super(SpatialDropout, self).__init__(p=p)
+
+    def forward(self, x):
+        x = x.unsqueeze(2)  # (N, T, 1, K)
+        x = x.permute(0, 3, 2, 1)  # (N, K, 1, T)
+        x = super(SpatialDropout, self).forward(x)  # (N, K, 1, T), some features are masked
+        x = x.permute(0, 3, 2, 1)  # (N, T, 1, K)
+        x = x.squeeze(2)  # (N, T, K)
+        return x
+
 class BiLSTM_CRF(nn.Module):
 	
 	def __init__(self,embedding_size,hidden_size,vocab_size,tagset_size,drop_out):
@@ -17,6 +29,7 @@ class BiLSTM_CRF(nn.Module):
 			dropout = drop_out,
 			bidirectional = True
 		)
+		self.dropout = SpatialDropout(0.6)
 		# self.layer_norm = LayerNorm(hidden_size * 2)
 		self.classifier = nn.Linear(hidden_size*2,tagset_size)
 		self.crf = CRF(tagset_size,batch_first = True)
@@ -24,6 +37,7 @@ class BiLSTM_CRF(nn.Module):
 	
 	def forward(self,inputs_ids):
 		embs = self.embedding(inputs_ids)
+		# embs = self.dropout(embs)
 		# while not pass the (h0,c0), the bilstm will be initialized
 		sequence_output, _ = self.bilstm(embs)
 		# sequence_output = self.layer_norm(sequence_output)

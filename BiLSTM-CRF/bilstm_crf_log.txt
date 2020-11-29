@@ -1,0 +1,222 @@
+Epoch:0
+training loss: 899.9351748511905
+-----------------testing result------------------
+[test] name: acc:0.5792, recall:0.3226, f1:0.4144
+[test] address: acc:0.3333, recall:0.1903, f1:0.2423
+[test] organization: acc:0.6310, recall:0.4332, f1:0.5137
+[test] game: acc:0.6630, recall:0.6068, f1:0.6336
+[test] scene: acc:0.4203, recall:0.1388, f1:0.2086
+[test] book: acc:0.5968, recall:0.4805, f1:0.5324
+[test] company: acc:0.4849, recall:0.3836, f1:0.4284
+[test] position: acc:0.6466, recall:0.4226, f1:0.5112
+[test] government: acc:0.4883, recall:0.5061, f1:0.4970
+[test] movie: acc:0.5806, recall:0.3576, f1:0.4426
+[test] total acc:0.5519, recall:0.3805, f1:0.4505
+Epoch:1
+training loss: 390.4672154017857
+-----------------testing result------------------
+[test] name: acc:0.6798, recall:0.5570, f1:0.6123
+[test] address: acc:0.4595, recall:0.2735, f1:0.3429
+[test] organization: acc:0.7294, recall:0.6022, f1:0.6597
+[test] game: acc:0.6356, recall:0.7390, f1:0.6834
+[test] scene: acc:0.4742, recall:0.4402, f1:0.4566
+[test] book: acc:0.8868, recall:0.3052, f1:0.4541
+[test] company: acc:0.6000, recall:0.6032, f1:0.6016
+[test] position: acc:0.7212, recall:0.6212, f1:0.6675
+[test] government: acc:0.6314, recall:0.7004, f1:0.6641
+[test] movie: acc:0.5736, recall:0.4901, f1:0.5286
+[test] total acc:0.6346, recall:0.5479, f1:0.5881
+Epoch:2
+training loss: 253.0884254092262
+-----------------testing result------------------
+[test] name: acc:0.7380, recall:0.5935, f1:0.6579
+[test] address: acc:0.4826, recall:0.4102, f1:0.4435
+[test] organization: acc:0.7162, recall:0.7357, f1:0.7258
+[test] game: acc:0.7659, recall:0.7763, f1:0.7710
+[test] scene: acc:0.5605, recall:0.4211, f1:0.4809
+[test] book: acc:0.8571, recall:0.3896, f1:0.5357
+[test] company: acc:0.6728, recall:0.5820, f1:0.6241
+[test] position: acc:0.8029, recall:0.6397, f1:0.7121
+[test] government: acc:0.6553, recall:0.7004, f1:0.6771
+[test] movie: acc:0.5979, recall:0.7483, f1:0.6647
+[test] total acc:0.6837, recall:0.6051, f1:0.6420
+Epoch:3
+training loss: 169.69725399925596
+-----------------testing result------------------
+[test] name: acc:0.7412, recall:0.6344, f1:0.6837
+[test] address: acc:0.4919, recall:0.4075, f1:0.4457
+[test] organization: acc:0.7330, recall:0.7330, f1:0.7330
+[test] game: acc:0.7398, recall:0.8000, f1:0.7687
+[test] scene: acc:0.5621, recall:0.4545, f1:0.5026
+[test] book: acc:0.6728, recall:0.7078, f1:0.6899
+[test] company: acc:0.6884, recall:0.6429, f1:0.6648
+[test] position: acc:0.7837, recall:0.7113, f1:0.7458
+[test] government: acc:0.6948, recall:0.7004, f1:0.6976
+[test] movie: acc:0.7573, recall:0.5166, f1:0.6142
+[test] total acc:0.6938, recall:0.6374, f1:0.6644
+Epoch:4
+training loss: 117.28448195684524
+-----------------testing result------------------
+[test] name: acc:0.7105, recall:0.6968, f1:0.7036
+[test] address: acc:0.4391, recall:0.4933, f1:0.4646
+[test] organization: acc:0.7224, recall:0.7302, f1:0.7263
+[test] game: acc:0.7799, recall:0.8169, f1:0.7980
+[test] scene: acc:0.5269, recall:0.4689, f1:0.4962
+[test] book: acc:0.7731, recall:0.5974, f1:0.6740
+[test] company: acc:0.7594, recall:0.6429, f1:0.6963
+[test] position: acc:0.7434, recall:0.7159, f1:0.7294
+[test] government: acc:0.6519, recall:0.7733, f1:0.7074
+[test] movie: acc:0.6728, recall:0.7219, f1:0.6965
+[test] total acc:0.6750, recall:0.6706, f1:0.6728
+Epoch:5
+training loss: 80.92145066034226
+-----------------testing result------------------
+[test] name: acc:0.6673, recall:0.7075, f1:0.6868
+[test] address: acc:0.4493, recall:0.4987, f1:0.4727
+[test] organization: acc:0.7365, recall:0.7084, f1:0.7222
+[test] game: acc:0.7281, recall:0.7898, f1:0.7577
+[test] scene: acc:0.6107, recall:0.4354, f1:0.5084
+[test] book: acc:0.7286, recall:0.6623, f1:0.6939
+[test] company: acc:0.6771, recall:0.6878, f1:0.6824
+[test] position: acc:0.7332, recall:0.7298, f1:0.7315
+[test] government: acc:0.7108, recall:0.7166, f1:0.7137
+[test] movie: acc:0.8018, recall:0.5894, f1:0.6794
+[test] total acc:0.6712, recall:0.6650, f1:0.6681
+Epoch:6
+training loss: 57.041771298363095
+-----------------testing result------------------
+[test] name: acc:0.7294, recall:0.6839, f1:0.7059
+[test] address: acc:0.4607, recall:0.4718, f1:0.4662
+[test] organization: acc:0.7285, recall:0.7384, f1:0.7334
+[test] game: acc:0.7365, recall:0.8339, f1:0.7822
+[test] scene: acc:0.5187, recall:0.4641, f1:0.4899
+[test] book: acc:0.7114, recall:0.6883, f1:0.6997
+[test] company: acc:0.6929, recall:0.6984, f1:0.6957
+[test] position: acc:0.7984, recall:0.6952, f1:0.7432
+[test] government: acc:0.6484, recall:0.7166, f1:0.6808
+[test] movie: acc:0.8017, recall:0.6159, f1:0.6966
+[test] total acc:0.6814, recall:0.6670, f1:0.6741
+Epoch:7
+training loss: 41.377708798363095
+-----------------testing result------------------
+[test] name: acc:0.7292, recall:0.6602, f1:0.6930
+[test] address: acc:0.5168, recall:0.4531, f1:0.4829
+[test] organization: acc:0.7255, recall:0.7275, f1:0.7265
+[test] game: acc:0.7855, recall:0.7695, f1:0.7774
+[test] scene: acc:0.5767, recall:0.5215, f1:0.5477
+[test] book: acc:0.7874, recall:0.6494, f1:0.7117
+[test] company: acc:0.6989, recall:0.6508, f1:0.6740
+[test] position: acc:0.7935, recall:0.7275, f1:0.7590
+[test] government: acc:0.7102, recall:0.7045, f1:0.7073
+[test] movie: acc:0.6667, recall:0.7947, f1:0.7251
+[test] total acc:0.7026, recall:0.6621, f1:0.6817
+Epoch:8
+training loss: 31.131908598400297
+-----------------testing result------------------
+[test] name: acc:0.7360, recall:0.6774, f1:0.7055
+[test] address: acc:0.4468, recall:0.4504, f1:0.4486
+[test] organization: acc:0.7433, recall:0.6785, f1:0.7094
+[test] game: acc:0.7429, recall:0.7932, f1:0.7672
+[test] scene: acc:0.5357, recall:0.5024, f1:0.5185
+[test] book: acc:0.6154, recall:0.7273, f1:0.6667
+[test] company: acc:0.6439, recall:0.6984, f1:0.6701
+[test] position: acc:0.7310, recall:0.7344, f1:0.7327
+[test] government: acc:0.7056, recall:0.7085, f1:0.7071
+[test] movie: acc:0.8333, recall:0.4967, f1:0.6224
+[test] total acc:0.6683, recall:0.6559, f1:0.6621
+Epoch:9
+training loss: 26.312703450520832
+-----------------testing result------------------
+[test] name: acc:0.6702, recall:0.6817, f1:0.6759
+[test] address: acc:0.4633, recall:0.4906, f1:0.4766
+[test] organization: acc:0.7716, recall:0.6812, f1:0.7236
+[test] game: acc:0.7331, recall:0.7729, f1:0.7525
+[test] scene: acc:0.5640, recall:0.5694, f1:0.5667
+[test] book: acc:0.7192, recall:0.6818, f1:0.7000
+[test] company: acc:0.6597, recall:0.6667, f1:0.6632
+[test] position: acc:0.7560, recall:0.7298, f1:0.7427
+[test] government: acc:0.6642, recall:0.7287, f1:0.6950
+[test] movie: acc:0.7541, recall:0.6093, f1:0.6740
+[test] total acc:0.6689, recall:0.6647, f1:0.6668
+Epoch:10
+training loss: 27.071254185267858
+-----------------testing result------------------
+[test] name: acc:0.7063, recall:0.7032, f1:0.7047
+[test] address: acc:0.4455, recall:0.4826, f1:0.4633
+[test] organization: acc:0.7099, recall:0.7003, f1:0.7051
+[test] game: acc:0.7287, recall:0.8102, f1:0.7673
+[test] scene: acc:0.5747, recall:0.4785, f1:0.5222
+[test] book: acc:0.7500, recall:0.5844, f1:0.6569
+[test] company: acc:0.6953, recall:0.6640, f1:0.6793
+[test] position: acc:0.7421, recall:0.7044, f1:0.7227
+[test] government: acc:0.6831, recall:0.6721, f1:0.6776
+[test] movie: acc:0.7172, recall:0.6887, f1:0.7027
+[test] total acc:0.6705, recall:0.6572, f1:0.6638
+Epoch:11
+training loss: 21.12171863374256
+-----------------testing result------------------
+[test] name: acc:0.7100, recall:0.7054, f1:0.7077
+[test] address: acc:0.4845, recall:0.4182, f1:0.4489
+[test] organization: acc:0.7479, recall:0.7357, f1:0.7418
+[test] game: acc:0.7540, recall:0.7898, f1:0.7715
+[test] scene: acc:0.5142, recall:0.5215, f1:0.5178
+[test] book: acc:0.6158, recall:0.7078, f1:0.6586
+[test] company: acc:0.6832, recall:0.6905, f1:0.6868
+[test] position: acc:0.7448, recall:0.7413, f1:0.7431
+[test] government: acc:0.6618, recall:0.7368, f1:0.6973
+[test] movie: acc:0.7949, recall:0.6159, f1:0.6940
+[test] total acc:0.6765, recall:0.6712, f1:0.6739
+Epoch:12
+training loss: 14.836170014880953
+-----------------testing result------------------
+[test] name: acc:0.6762, recall:0.7097, f1:0.6925
+[test] address: acc:0.4723, recall:0.4343, f1:0.4525
+[test] organization: acc:0.7235, recall:0.7057, f1:0.7145
+[test] game: acc:0.7556, recall:0.7966, f1:0.7756
+[test] scene: acc:0.5256, recall:0.5407, f1:0.5330
+[test] book: acc:0.7105, recall:0.7013, f1:0.7059
+[test] company: acc:0.7192, recall:0.6640, f1:0.6905
+[test] position: acc:0.7512, recall:0.7182, f1:0.7344
+[test] government: acc:0.6693, recall:0.6964, f1:0.6825
+[test] movie: acc:0.7664, recall:0.6954, f1:0.7292
+[test] total acc:0.6766, recall:0.6660, f1:0.6713
+Epoch:13
+training loss: 14.258146740141369
+-----------------testing result------------------
+[test] name: acc:0.6495, recall:0.7054, f1:0.6763
+[test] address: acc:0.4205, recall:0.4611, f1:0.4399
+[test] organization: acc:0.7283, recall:0.7084, f1:0.7182
+[test] game: acc:0.7724, recall:0.8169, f1:0.7941
+[test] scene: acc:0.5436, recall:0.5072, f1:0.5248
+[test] book: acc:0.7619, recall:0.6234, f1:0.6857
+[test] company: acc:0.7056, recall:0.6720, f1:0.6883
+[test] position: acc:0.7690, recall:0.7229, f1:0.7452
+[test] government: acc:0.7162, recall:0.6437, f1:0.6780
+[test] movie: acc:0.6903, recall:0.7086, f1:0.6993
+[test] total acc:0.6680, recall:0.6628, f1:0.6654
+Epoch:14
+training loss: 16.756222679501487
+-----------------testing result------------------
+[test] name: acc:0.7422, recall:0.6624, f1:0.7000
+[test] address: acc:0.4487, recall:0.4692, f1:0.4587
+[test] organization: acc:0.7530, recall:0.6894, f1:0.7198
+[test] game: acc:0.7869, recall:0.8136, f1:0.8000
+[test] scene: acc:0.5323, recall:0.5120, f1:0.5220
+[test] book: acc:0.7619, recall:0.6234, f1:0.6857
+[test] company: acc:0.7401, recall:0.6402, f1:0.6865
+[test] position: acc:0.7661, recall:0.6882, f1:0.7251
+[test] government: acc:0.6728, recall:0.7409, f1:0.7052
+[test] movie: acc:0.7676, recall:0.7219, f1:0.7440
+[test] total acc:0.6927, recall:0.6546, f1:0.6731
+-----------------testing result------------------
+[test] name: acc:0.7422, recall:0.6624, f1:0.7000
+[test] address: acc:0.4487, recall:0.4692, f1:0.4587
+[test] organization: acc:0.7530, recall:0.6894, f1:0.7198
+[test] game: acc:0.7869, recall:0.8136, f1:0.8000
+[test] scene: acc:0.5323, recall:0.5120, f1:0.5220
+[test] book: acc:0.7619, recall:0.6234, f1:0.6857
+[test] company: acc:0.7401, recall:0.6402, f1:0.6865
+[test] position: acc:0.7661, recall:0.6882, f1:0.7251
+[test] government: acc:0.6728, recall:0.7409, f1:0.7052
+[test] movie: acc:0.7676, recall:0.7219, f1:0.7440
+[test] total acc:0.6927, recall:0.6546, f1:0.6731

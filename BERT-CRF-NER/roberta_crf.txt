@@ -1,0 +1,134 @@
+--------Process Done!--------
+--------Dataset Build!--------
+--------Get Data-loader!--------
+--------Start Training!--------
+Epoch:  1 , train loss:  588.3950785620738
+Epoch:  1 , dev loss:  305.22444726925085 , f1 score:  0.6706850735627714
+--------Save best model!--------
+Epoch:  2 , train loss:  232.45548403465142
+Epoch:  2 , dev loss:  303.0743961145382 , f1 score:  0.6942748091603054
+--------Save best model!--------
+Epoch:  3 , train loss:  146.61203581599867
+Epoch:  3 , dev loss:  298.6167184810827 , f1 score:  0.7244229878976258
+--------Save best model!--------
+Epoch:  4 , train loss:  88.58802667714782
+Epoch:  4 , dev loss:  328.8003443349706 , f1 score:  0.7302463054187193
+--------Save best model!--------
+Epoch:  5 , train loss:  60.54517280449301
+Epoch:  5 , dev loss:  369.13538489011256 , f1 score:  0.7256450763559769
+Epoch:  6 , train loss:  43.308474960973705
+Epoch:  6 , dev loss:  401.82694659846845 , f1 score:  0.7380794262186213
+--------Save best model!--------
+Epoch:  7 , train loss:  31.593417547516903
+Epoch:  7 , dev loss:  426.9058886235303 , f1 score:  0.7362857907412362
+Epoch:  8 , train loss:  24.68058560258251
+Epoch:  8 , dev loss:  472.21768581277075 , f1 score:  0.7423574956614605
+--------Save best model!--------
+Epoch:  9 , train loss:  20.717585814201225
+Epoch:  9 , dev loss:  483.5416774938602 , f1 score:  0.7320199703143976
+Epoch:  10 , train loss:  17.555302797737767
+Epoch:  10 , dev loss:  548.1528324844813 , f1 score:  0.7360604654246502
+Epoch:  11 , train loss:  16.097258664793888
+Epoch:  11 , dev loss:  481.8775955049118 , f1 score:  0.7470122196857796
+--------Save best model!--------
+Epoch:  12 , train loss:  15.156205015667414
+Epoch:  12 , dev loss:  528.3073089146378 , f1 score:  0.7394141145139814
+Epoch:  13 , train loss:  14.229873560242734
+Epoch:  13 , dev loss:  561.0468710719949 , f1 score:  0.7524046546041568
+--------Save best model!--------
+Epoch:  14 , train loss:  11.336608312897763
+Epoch:  14 , dev loss:  624.7986483432279 , f1 score:  0.7534190927555857
+--------Save best model!--------
+Epoch:  15 , train loss:  12.018303022546283
+Epoch:  15 , dev loss:  662.1840524201345 , f1 score:  0.7531628532974427
+Epoch:  16 , train loss:  12.053305310718084
+Epoch:  16 , dev loss:  656.4438645768873 , f1 score:  0.748345698816924
+Epoch:  17 , train loss:  11.71191891169144
+Epoch:  17 , dev loss:  677.4987019453898 , f1 score:  0.7464204469423258
+Epoch:  18 , train loss:  10.488382977954412
+Epoch:  18 , dev loss:  711.9225184374517 , f1 score:  0.7499328498522696
+Epoch:  19 , train loss:  8.409507064496056
+Epoch:  19 , dev loss:  809.154833198774 , f1 score:  0.7566245413779046
+--------Save best model!--------
+Epoch:  20 , train loss:  9.299143896264544
+Epoch:  20 , dev loss:  770.0295236417562 , f1 score:  0.7585786802030456
+--------Save best model!--------
+Epoch:  21 , train loss:  11.53733287423344
+Epoch:  21 , dev loss:  812.3480384751122 , f1 score:  0.7567275185936443
+Epoch:  22 , train loss:  9.024200633420783
+Epoch:  22 , dev loss:  828.6708822722483 , f1 score:  0.756868774650712
+Epoch:  23 , train loss:  8.363191119695115
+Epoch:  23 , dev loss:  844.9863495779509 , f1 score:  0.7545405258877744
+Epoch:  24 , train loss:  6.884649155503612
+Epoch:  24 , dev loss:  852.9609628809561 , f1 score:  0.7599783520497903
+--------Save best model!--------
+Epoch:  25 , train loss:  8.362203800072104
+Epoch:  25 , dev loss:  769.8200311944037 , f1 score:  0.7548347696274683
+Epoch:  26 , train loss:  4.353773820198189
+Epoch:  26 , dev loss:  842.9874666421721 , f1 score:  0.7601846277342965
+--------Save best model!--------
+Epoch:  27 , train loss:  5.276122117446641
+Epoch:  27 , dev loss:  853.2604555942045 , f1 score:  0.7590005373455132
+Epoch:  28 , train loss:  4.734486377845376
+Epoch:  28 , dev loss:  884.786489656656 , f1 score:  0.7619948641708341
+--------Save best model!--------
+Epoch:  29 , train loss:  4.474726321333546
+Epoch:  29 , dev loss:  857.0011638981281 , f1 score:  0.7632004310344829
+--------Save best model!--------
+Epoch:  30 , train loss:  4.067075907173804
+Epoch:  30 , dev loss:  867.1364498327274 , f1 score:  0.7632059519783565
+Epoch:  31 , train loss:  2.3550112207057112
+Epoch:  31 , dev loss:  884.3651032400603 , f1 score:  0.7599510936014129
+Epoch:  32 , train loss:  3.0979566169997392
+Epoch:  32 , dev loss:  879.3652352814627 , f1 score:  0.7612618633872477
+Epoch:  33 , train loss:  2.8713284347016934
+Epoch:  33 , dev loss:  913.8167425476679 , f1 score:  0.7629376715538595
+Epoch:  34 , train loss:  2.7909543635481495
+Epoch:  34 , dev loss:  896.2838098507116 , f1 score:  0.7658245042108124
+--------Save best model!--------
+Epoch:  35 , train loss:  2.4720336299831582
+Epoch:  35 , dev loss:  896.8991523969291 , f1 score:  0.7669437124130009
+--------Save best model!--------
+Epoch:  36 , train loss:  1.5682283498473086
+Epoch:  36 , dev loss:  883.2682268501509 , f1 score:  0.7653171390013496
+Epoch:  37 , train loss:  1.9527931859937764
+Epoch:  37 , dev loss:  905.8901651212484 , f1 score:  0.7624324324324325
+Epoch:  38 , train loss:  1.2948681944507663
+Epoch:  38 , dev loss:  933.3700214046063 , f1 score:  0.7671734998642411
+--------Save best model!--------
+Epoch:  39 , train loss:  0.7469450336391643
+Epoch:  39 , dev loss:  915.3598521015432 , f1 score:  0.7637710437710439
+Epoch:  40 , train loss:  0.6478627010927362
+Epoch:  40 , dev loss:  924.7994330377862 , f1 score:  0.7668499287314193
+Epoch:  41 , train loss:  0.5709979614969027
+Epoch:  41 , dev loss:  934.1459785688041 , f1 score:  0.7674418604651163
+--------Save best model!--------
+Epoch:  42 , train loss:  0.4751424304509567
+Epoch:  42 , dev loss:  946.9832993309096 , f1 score:  0.7669275263695136
+Epoch:  43 , train loss:  0.32891164391727773
+Epoch:  43 , dev loss:  938.8227037486464 , f1 score:  0.7674055996203647
+Epoch:  44 , train loss:  0.21092367980439783
+Epoch:  44 , dev loss:  954.9910810111772 , f1 score:  0.7684996605566871
+--------Save best model!--------
+Epoch:  45 , train loss:  0.19056046211113364
+Epoch:  45 , dev loss:  964.6978327685064 , f1 score:  0.7686226402235398
+--------Save best model!--------
+Epoch:  46 , train loss:  0.23368345680883376
+Epoch:  46 , dev loss:  969.4730931650294 , f1 score:  0.7696491705194451
+--------Save best model!--------
+Epoch:  47 , train loss:  0.4715391983420162
+Epoch:  47 , dev loss:  969.7946861946937 , f1 score:  0.7691152375750957
+Epoch:  48 , train loss:  0.1799977795552399
+Epoch:  48 , dev loss:  972.1510133648862 , f1 score:  0.7692832298983836
+Epoch:  49 , train loss:  0.06441151893745034
+Epoch:  49 , dev loss:  970.8036940168627 , f1 score:  0.769797924631349
+--------Save best model!--------
+Epoch:  50 , train loss:  0.12656089815042787
+Epoch:  50 , dev loss:  971.5317047421295 , f1 score:  0.7699870280603537
+--------Save best model!--------
+Best val f1:  0.7699870280603537
+Training Finished!
+--------Dataset Build!--------
+--------Get Data-loader!--------
+--------Load model from  /home/qinziwei/hm_Model/CLUENER2020/BERT-NER/experiments/clue/ --------
+test loss:  893.8966064453125 , f1 score:  0.7733205985354983
